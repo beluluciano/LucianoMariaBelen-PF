@@ -1,0 +1,30 @@
+@mixin footer{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 30vh;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100x;
+    background: #d27aac; 
+}
+
+@mixin txt-requisitos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 85%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 0.3rem 2rem 0.5rem 2rem;
+}
+
+@mixin hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4.5rem;
+}

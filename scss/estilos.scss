@@ -1,0 +1,24 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+//linkeo de todas las hojas del html */
+@import "html/nosotros";
+@import "html/donar";
+@import "html/contacto";
+@import "html/adoptar";
+@import "html/index";
+
+/*variables, mixin, extend*/
+@import "base/variables";
+@import "base/extend";
+@import "base/mixin";
+
+/*componentes*/
+@import "components/estilos-generales";
+@import "components/footerstyle";
+@import "components/card-temasimportant";

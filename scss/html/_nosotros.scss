@@ -1,0 +1,223 @@
+@import "../base/variables";
+@import "../base/extend";
+@import "../base/mixin";
+
+body{
+
+    .header-nosotros{
+        @include hero;
+        /*ESTILOS NAV BAR*/
+    nav a {
+        color: rgb(209, 140, 178);
+        text-decoration: none;
+        font-weight: bolder;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        list-style: none;
+        display: flex;
+        gap: 60px;
+        width: 100%;
+    .navbar-item a:hover{
+        background-color: $color-principal;
+        color: white;
+        border-radius: 50px;
+        text-transform: uppercase;
+        border-style: solid;
+        border-width: 5px;
+        padding: 10%;
+    .container-fluid{
+        background-color: white;
+    .navbar-toggler:hover{
+        color: rgb(209, 140, 178);
+    }          
+    } 
+    }
+    }
+    }
+
+    main{
+        .hero-uno{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: start;
+            flex-direction: column;
+            line-height: 130%;
+            font-size: 160%;
+            font-weight: bold;
+            padding: 0rem 2rem;
+            width: 100%;
+            height: 35vh;
+            color: white;
+            background-image: url(../img/banner2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            grid-area: hero-uno;
+        }
+        .light{
+            width: 100%;
+        .postcard {
+            flex-wrap: wrap;
+            display: flex;
+            box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+            border-radius: 10px;
+            margin: 0 0 2rem 0;
+            overflow: hidden;
+            position: relative;
+            color: #ffffff;
+            .postcard__img_link {
+                display: contents;
+            .postcard__img {
+                max-height: 450px;
+                width: 100%;
+                object-fit: cover;
+                position: relative;
+            }
+            }
+            .postcard__text {
+                font-size: 0.8rem;
+                padding: 1.5rem;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+            .postcard__title {
+                font-size: 1.75rem;}
+            .postcard__preview-txt {
+                color: black;
+                overflow: hidden;
+                text-align: justify;
+                height: 100%;
+            } 
+            }
+        }
+        }
+        
+    }
+}
+
+
+/*media querys*/
+/*RESPONSIVE TABLET*/
+@media screen and (min-width: 769px) {
+/*estilos de card mision y vision*/ 
+body{
+    main{
+        .hero-uno {
+            font-size: 210%;
+        }
+        .light{
+        .postcard {
+            flex-wrap: inherit;
+            .postcard__img_link {
+            .postcard__img {
+                max-width: 300px;
+                max-height: 100%;
+                transition: transform 0.3s ease;
+            }
+            }
+            .postcard__text {
+                padding: 3rem;
+                width: 100%;
+            .postcard__title {
+                font-size: 1.75rem;}
+            }
+        }
+        }
+    }
+}   
+}
+
+/*RESPONSIVE DESKTOP*/
+@media screen and (min-width: 1024px){
+    
+    body{
+        h1{
+            font-size: 2.7em;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+        }
+
+        h2{
+            font-size: 2em;
+        }
+        
+        h3{
+            font-size: 2em;
+        }
+
+        /*ESTILOS NAVBAR*/
+        .header-nosotros{
+            .navbar{
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                align-items: flex-end;
+                list-style: none;
+                display: flex;
+                gap: 60px;
+                width: 100%;
+
+            }
+        }
+        main{
+            /*ESTILOS HERO*/
+            .hero-uno {
+                font-size: 5rem !important;
+                line-height: 130%;
+                padding: 0rem 5rem;
+                width: 100%;
+                height: 800px;
+            }
+
+            /*estilos texto under hover*/
+            .info-main{
+                width: 100%;
+                .texto-centrado{
+                    font-size: 150%;
+                    align-items: center;
+                    justify-items: center;
+                    width: 80%;
+                }
+            }
+
+            .light{
+                width: 100%;
+            .postcard {
+                display: flex;
+                flex-wrap: inherit;
+                box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+                border-radius: 10px;
+                margin: 0 0 2rem 0;
+                overflow: hidden;
+                position: relative;
+                color: #ffffff;
+                .postcard__text {
+                    font-size: 0.8rem;
+                    padding: 3rem;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                .postcard__title {
+                    font-size: 1.75rem;}
+                .postcard__preview-txt {
+                    color: black;
+                    overflow: hidden;
+                    text-align: justify;
+                    height: 100%;
+                    font-size: 1rem;
+                } 
+                }
+            }
+            }
+        }
+    }
+
+}
+

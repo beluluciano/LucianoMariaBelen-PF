@@ -1,0 +1,84 @@
+
+#temas-importantes{
+    text-align: center;
+.conteiner{
+    padding: 0.5rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+.info-card{
+.card{
+    margin: 30px 10px 15px;
+    color: #fff;
+    border-radius: 15px;
+    background-position: center center;
+    background-size: cover;
+    padding: 80px;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;  
+p{
+    display: none;
+}   
+}
+}
+}
+}
+.card:first-child{
+    background-image: url("../img/donacion-economica.png");
+}
+    
+.card:nth-child(2){
+    background-image: url("../img/donacion-material.png");
+    padding: 60px;
+}
+    
+.card:last-child{
+    background-image: url("../img/bazar-beneficio.png");
+    
+}
+
+/*RESPONSIVE TABLET*/
+@media screen and (min-width: 768px){
+    #temas-importantes{
+        .conteiner{
+            .info-card{
+    .card{
+        padding: 6rem 15rem;
+        height: 20vh;
+        p{
+            display: none;
+        }   
+    }
+}
+}
+}
+}
+
+/*RESPONSIVE DESKTOP*/
+@media screen and (min-width: 1024px){
+
+        #temas-importantes{
+        .conteiner{
+            padding: 1.5rem 3rem 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        .info-card{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 4rem;
+        .card{
+            padding: 100px;
+            height: 15rem;
+        p{
+            display: block;
+        }   
+        }
+        }
+        }
+        }
+}
+

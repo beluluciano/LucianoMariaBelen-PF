@@ -1,0 +1,26 @@
+%footer{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 30vh;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100x;
+    background: #d27aac; 
+}
+
+%texto-centrado{
+    font-size: 90%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 0.3rem 2rem 0.5rem 2rem;
+}
+
+%container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+

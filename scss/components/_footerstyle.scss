@@ -1,0 +1,158 @@
+
+/*ESTILOS DE FOOTER*/
+footer{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 30vh;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100x;
+    background: $color-principal;
+    .container-footer{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1,1fr;
+        gap: 60px;
+        justify-items: center;
+        padding-left: 1rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        .sec{
+            h3{
+                position: relative;
+                color: #fff;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            ::before{
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 50px;
+                height: 2px;
+                background: white;
+            }
+            }
+            p{
+                color: white;
+            }
+            .sci{
+                margin-top: 1rem;
+                display: grid;
+                grid-template-columns: repeat(4, 50px);
+                grid-gap: 0.5rem;
+            li{
+                list-style: none;
+            a{
+                display: inline-block;
+                width: 2.5rem;
+                height: 2.5rem;
+                background: #ddbccf;
+                display: grid;
+                align-content: center;
+                justify-content: center;
+                border-radius: 4px; 
+            :hover{
+                background: rgba(255, 255, 255, 0.608);
+            }
+            .boxicon{
+                fill: $color-boxicons;
+            }
+
+            }
+            }
+            }
+        }
+        .sec{
+            .info{
+                position: relative;
+                font-size: 0.9rem;
+            li{
+                display: grid;
+                grid-template-columns: 30px 1fr;
+                margin-bottom: 0.5rem;
+            span{
+                fill: #fff;
+                color: white;
+
+            }   
+            }
+            
+            .a{
+                color: white;
+                text-decoration: none;
+            
+            }
+            }
+
+        }
+    }
+}
+/*ESTILOS DEL TEXTO COPYRIGHT*/ 
+.copyright-text{
+    width: 100%;
+    background-color: #ddbccf;
+    padding: 0.3rem 1rem;
+    font-size: 0.7rem;
+    text-align: center;
+    color: $color-principal;
+    font-weight: bold;
+}
+
+
+
+
+
+/*RESPONSIVE TABLET*/
+@media screen and (min-width: 768px){
+
+    footer{
+        .container-footer{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .sec{
+                .info{
+                    font-size: 1rem;
+                }
+    
+            }
+            .about-us{
+                padding-left: 3rem;
+            }
+        }
+    }
+    
+    .copyright-text{
+        font-size: 1rem;
+    
+    }
+    }
+
+/*RESPONSIVE DESKTOP*/
+@media screen and (min-width: 1024px){
+
+footer{
+    .container-footer{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .sec{
+            .info{
+                font-size: 1rem;
+            }
+
+        }
+        .about-us{
+            padding-left: 3rem;
+        }
+    }
+}
+
+.copyright-text{
+    font-size: 1rem;
+
+}
+}

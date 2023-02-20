@@ -1,0 +1,200 @@
+@import "../base/variables";
+@import "../base/extend";
+@import "../base/mixin";
+
+body{
+    .header-contacto{
+        @include hero;
+        /*ESTILOS NAV BAR*/
+    nav a {
+        color: rgb(209, 140, 178);
+        text-decoration: none;
+        font-weight: bolder;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        list-style: none;
+        display: flex;
+        gap: 60px;
+        width: 100%;
+    .navbar-item a:hover{
+        background-color: $color-principal;
+        color: white;
+        border-radius: 50px;
+        text-transform: uppercase;
+        border-style: solid;
+        border-width: 5px;
+        padding: 10%;
+    .container-fluid{
+        background-color: white;
+    .navbar-toggler:hover{
+        color: #d18cb2;
+    }          
+    } 
+    }
+    }
+    }
+    main{
+        .hero-cuatro{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: start;
+            flex-direction: column;
+            line-height: 130%;
+            font-size: 160%;
+            font-weight: bold;
+            padding: 0rem 2rem;
+            width: 100%;
+            height: 35vh;
+            color: white;
+            background-image: url(../img/banner4.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            grid-area: hero-uno;
+        }
+        form {
+            display: flex;
+            margin-top: 0em;}
+        .section-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10%;
+            padding-right: 10%;
+            overflow: hidden;
+        .container-form {
+            width: 100%;
+            max-width: 1000px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        .form-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        .field {
+            width: 100%;
+            padding: 15px 10px;
+            font-size: 15px;
+            border: 1px solid #ddbccf;
+            margin-bottom: 20px;
+            border-radius: 3px;
+            outline: 0px;
+        }
+        .send-button{
+            padding: 15px;
+            font-size: 15px;
+            border: none;
+            outline: 0px;
+            background: #d27aac;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 300ms ease;
+        }    
+        }
+        }
+        }
+        .boxicon-form{
+        fill: #d27aac;
+        }   
+    }
+}
+
+
+/*media querys*/
+
+@media screen and (min-width: 768px) {
+    body{
+        main{
+            .hero-uno {
+                font-size: 210%;}
+        }
+    
+    }
+}
+
+/*RESPONSIVE DESKTOP*/
+@media screen and (min-width: 1024px){
+    
+    body{
+        
+        h1{
+            font-size: 2.7em;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+        }
+        h2{
+            font-size: 2em;
+        }
+        
+        h3{
+            font-size: 2em;
+        }
+
+        /*ESTILOS NAVBAR*/
+        .header-contacto{
+            .navbar{
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                align-items: flex-end;
+                list-style: none;
+                display: flex;
+                gap: 60px;
+                width: 100%;
+
+            }
+        }
+        main{
+            .hero-cuatro{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: start;
+                font-size: 5rem;
+                line-height: 130%;
+                padding: 0rem 5rem;
+                width: 100%;
+                height: 800px;
+                color: white;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            /*estilos texto under hover*/
+            .info-main{
+                width: 100%;
+                .texto-centrado{
+                    font-size: 150%;
+                    align-items: center;
+                    justify-items: center;
+                    width: 80%;
+                }
+            }
+            .section-form {
+            .container-form {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 80px;
+                margin-top: 80px;
+                margin-bottom: 80px;
+            
+            }
+            }
+ 
+        }
+    }
+}
