@@ -62,9 +62,10 @@ body{
     #testimonios-adopt {
         display: grid;
         place-items: center;
-        height: 110vh;
+        height: 150vh;
         background: #ddbccf;
         .container-testimonial{
+            height: 110vh;
         .section-header{
             position: relative;
             text-align: center;
@@ -217,6 +218,13 @@ body{
                     justify-items: center;
                     width: 80%;
                 }
+            }
+
+            #testimonios-adopt {
+                display: grid;
+                place-items: center;
+                height: 70vh;
+                background: #ddbccf;
             }
         }
     }
