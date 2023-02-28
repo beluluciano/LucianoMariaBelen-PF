@@ -37,6 +37,8 @@ footer{
             }
             p{
                 color: white;
+                font-size: 80%;
+                padding-right: 2rem;
             }
             .sci{
                 margin-top: 1rem;
@@ -68,7 +70,9 @@ footer{
         .sec{
             .info{
                 position: relative;
-                font-size: 0.9rem;
+                font-size: 75%;
+                padding-right: 2rem;
+                padding-left: 0rem;
             li{
                 display: grid;
                 grid-template-columns: 30px 1fr;
@@ -114,6 +118,11 @@ footer{
             display: grid;
             grid-template-columns: 1fr 1fr;
             .sec{
+                p{
+                    color: white;
+                    font-size: 100%;
+                    padding-right: 2rem;
+                }
                 .info{
                     font-size: 1rem;
                 }
@@ -140,8 +149,13 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
         .sec{
+            p{
+                color: white;
+                font-size: 100%;
+                padding-right: 2rem;
+            }
             .info{
-                font-size: 1rem;
+                font-size: 2rem;
             }
 
         }

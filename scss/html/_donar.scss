@@ -17,8 +17,8 @@ body{
     .navbar {
         display: flex;
         flex-direction: column;
-        justify-content: end;
-        align-items: flex-end;
+        justify-content: center;
+        align-items: center;
         list-style: none;
         display: flex;
         gap: 60px;
@@ -51,6 +51,7 @@ body{
         font-size: 160%;
         font-weight:bold;
         padding: 0rem 2rem;
+        margin-top: 7rem;
         width: 100%;
         height: 35vh;
         color: white;
@@ -62,35 +63,35 @@ body{
     #testimonios-adopt {
         display: grid;
         place-items: center;
-        height: 150vh;
+        height: 30rem;
+        padding-bottom: 55rem;
         background: #ddbccf;
         .container-testimonial{
-            height: 110vh;
+            height: 100vh;
         .section-header{
             position: relative;
             text-align: center;
             font-weight: bold;
             padding-top: 3rem;
-            padding-bottom: 3rem;
             color: #9b577e;
         :after{
             content: '';
             height: 3px;
             width: 200px;
             position: absolute;
-            bottom: 1rem;
+            bottom: -1rem;
             left: calc(50% - 100px);
             background: #9b577e;
         }
         span {
             display: block;
-            font-size: 1.3rem;
             font-weight: 500;
+            font-size: 1rem;
+            padding: 0.2rem 0.6rem;
         }
         }
         .testimonials{
             max-width: 1000px;
-            padding: 1rem 1rem 50px;
             margin: 0 auto 80px auto;
         #carouselExample{
             .carousel-inner{
@@ -107,7 +108,7 @@ body{
                                     margin-bottom: 30px;
                                     text-align: center;
                                     .img-area {
-                                        margin: 0 15px 15px 15px;
+                                        margin: 2rem 1rem 1rem 1rem;
                                         img {
                                             height: 200px;
                                             width: 200px;
@@ -124,6 +125,7 @@ body{
             .col-md-6{
                 .content{
                     font-size: 1rem;
+                    padding-top: 2rem;
                 p{
                     text-align: center;
                 span {
@@ -151,9 +153,24 @@ body{
 @media screen and(min-width: 768px){
 body{
     #hero-cinco{
-    font-size: 210%;
+        height: 70vh;
+        font-size: 250%;
+        margin-top: 7rem;
+        padding: 2rem 5rem;
     }
-}
+    footer{
+        .container-footer{
+            .sec{
+                .info {
+                    font-size: 1rem;
+                    padding-right: 2rem;
+                }
+            }
+
+        }
+
+    } 
+    }
 }
     
 
@@ -184,12 +201,12 @@ body{
                 display: flex;
                 flex-direction: row;
                 justify-content: end;
-                align-items: flex-end;
+                align-items: center;
                 list-style: none;
                 display: flex;
                 gap: 60px;
                 width: 100%;
-
+                padding: 1rem 3rem;
             }
         }
         main{
@@ -202,6 +219,7 @@ body{
                 font-size: 5rem;
                 line-height: 130%;
                 padding: 0rem 5rem;
+                margin-top: 7rem;
                 width: 100%;
                 height: 800px;
                 color: white;
@@ -223,7 +241,8 @@ body{
             #testimonios-adopt {
                 display: grid;
                 place-items: center;
-                height: 70vh;
+                height: 40rem;
+                padding-bottom: 0;
                 background: #ddbccf;
             }
         }
