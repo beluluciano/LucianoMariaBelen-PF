@@ -11,6 +11,9 @@ body{
         text-decoration: none;
         font-weight: bolder;
     }
+    .bg-light {
+        background-color: white !important;
+    }
     .navbar {
         display: flex;
         flex-direction: column;
@@ -50,53 +53,106 @@ body{
         padding: 0rem 2rem;
         margin-top: 7rem;
         width: 100%;
-        height: 35vh;
+        height: 80vh;
         color: white;
-        background-image: url(../img/banner3.png);
+        background-image: url(../img/banner3-mobile.png);
         background-size: cover;
         background-repeat: no-repeat;
+
+        .text-focus-in {
+            @extend %animacion;
+        }
+        /* animation text-focus-in*/
+        @-webkit-keyframes text-focus-in {
+            0% {
+            -webkit-filter: blur(12px);
+                    filter: blur(12px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-filter: blur(0px);
+                    filter: blur(0px);
+            opacity: 1;
+            }
+        }
+        @keyframes text-focus-in {
+            0% {
+            -webkit-filter: blur(12px);
+                    filter: blur(12px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-filter: blur(0px);
+                    filter: blur(0px);
+            opacity: 1;
+            }
+        }
     }
 
     #lista-uno{
         .container {
         @extend %container;
+        align-items: center;
+        padding-top: 2rem;
         .img-container1{
             background-image: url(../img/requisitos1.png);
             background-size: cover;
             background-position: center center;
-            height: 35vh;
-            width: 100%;}
+            height: 55vh;
+            width: 85%;
+        }
         .texto-requisitos1 {
             @include txt-requisitos;
+            p{
+                padding: 0px;
+                margin: 0px;
+            }
+        .title-requisitos{
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: $color-principal;
+        }
         }
         }
     }
     #lista-dos {
         .container{
             @extend %container;
+            align-items: center;
         .img-container2{
             background-image: url(../img/requisitos2.png);
             background-size: cover;
             background-position: center center;
-            height: 35vh;
-            width: 100%;}
+            height: 55vh;
+            width: 85%;}
         .texto-requisitos2{
             @include txt-requisitos;
+            p{
+                margin: 0px;
+            }
         }
         }
     }
     #lista-tres{
         .container{
             @extend %container;
+            align-items: center;
         .img-container3{
             background-image: url(../img/requisitos3.png);
             background-size: cover;
             background-position: center center;
-            height: 35vh;
-            width: 100%;
+            height: 55vh;
+            width: 85%;
         }  
         .texto-requisitos3{
             @include txt-requisitos;
+            p{
+                margin: 0px;
+            }
+            ul{
+                margin: 0%;
+                padding-left: 0.4rem;
+            }
         }
         }
 
@@ -117,39 +173,41 @@ body{
                 padding: 2rem 5rem;
                 margin-top: 7rem;
                 height: 70vh;
+                background-image: url(../img/banner3.png);
             }
                 /*ESTILOS LISTA DE REQUISITOS*/
                 #lista-uno{
                     .container {
                         display: flex;
+                        flex-direction: row-reverse;
                         padding-top: 3rem;
-                        padding-bottom: 2rem;
+                        padding-bottom: 6rem;
                     .img-container1{
-                        height: 400px;
-                        width: 300px;
+                        height: 600px;
+                        width: 400px;
                     }
                     .texto-requisitos1 {
-                        width: 40%;
-                        font-size: 80%;
+                        width: 50%;
+                        font-size: 85%;
                         text-align: initial;
-                        padding: 0rem 0rem 0rem 1rem;
+                        padding: 0rem 1.5rem;
                     }
                     }
                 }
                 
                 #lista-dos {
                     .container{
-                        display: flex;
-                        padding-bottom: 40px;
+                        flex-direction: row;
+                        padding-bottom: 6rem;
                     .img-container2{
-                        height: 400px;
-                        width: 300px;
+                        height: 600px;
+                        width: 400px;
                     }
                     .texto-requisitos2{
-                        width: 40%;
-                        font-size: 80%;
-                        text-align: initial;
-                        padding: 0rem 0rem 0rem 1rem;
+                        width: 50%;
+                        font-size: 85%;
+                        text-align: end;
+                        padding: 0rem 1.5rem;
                         display: flex;
                         flex-direction: column;
                     }
@@ -158,22 +216,22 @@ body{
     
                 #lista-tres{
                     .container{
-                        display: flex;
-                        padding-bottom: 40px;
+                        flex-direction: row-reverse;
+                        padding-bottom: 3rem;
                     .img-container3{
-                        height: 400px;
-                        width: 300px;
+                        height: 600px;
+                        width: 400px;
                     }  
                     .texto-requisitos3{
-                        width: 40%;
-                        font-size: 80%;
+                        width: 50%;
+                        font-size: 85%;
                         text-align: initial;
-                        padding: 0rem 0rem 0rem 1rem;
+                        padding: 0rem 1.5rem;
                         display: flex;
                         flex-direction: column;
                     }
-                }
-            } 
+                    }
+                }  
         }
         footer{
             .container-footer{
@@ -239,6 +297,7 @@ body{
                 color: white;
                 background-size: cover;
                 background-repeat: no-repeat;
+                background-image: url(../img/banner3.png);
             }
 
             /*estilos texto under hover*/

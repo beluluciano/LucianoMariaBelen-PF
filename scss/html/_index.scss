@@ -3,9 +3,9 @@
 @import "../base/mixin";
 
 body{
+    /*ESTILOS NAV BAR*/
     .header-index{
         @include hero;
-        /*ESTILOS NAV BAR*/
     nav a {
         color: rgb(209, 140, 178);
         text-decoration: none;
@@ -41,8 +41,8 @@ body{
     }
     }
 
+    /*ESTILOS HERO*/
     main{
-        /*ESTILOS HERO*/
         #hero{
             display: flex;
             align-items: center;
@@ -55,18 +55,47 @@ body{
             padding: 0rem 2rem;
             margin-top: 7rem;
             width: 100%;
-            height: 35vh;
+            height: 80vh;
             color: white;
-            background-image: url(../img/banner.png);
+            background-image: url(../img/banner-mobile.png);
             background-size: cover;
             background-repeat: no-repeat;
+            .text-focus-in {
+                @extend %animacion;
+            }
+            /* animation text-focus-in*/
+            @-webkit-keyframes text-focus-in {
+                0% {
+                -webkit-filter: blur(12px);
+                        filter: blur(12px);
+                opacity: 0;
+                }
+                100% {
+                -webkit-filter: blur(0px);
+                        filter: blur(0px);
+                opacity: 1;
+                }
+            }
+            @keyframes text-focus-in {
+                0% {
+                -webkit-filter: blur(12px);
+                        filter: blur(12px);
+                opacity: 0;
+                }
+                100% {
+                -webkit-filter: blur(0px);
+                        filter: blur(0px);
+                opacity: 1;
+                }
+            }
+  
         }
-
         .info-main{
         .texto-centrado{
             @extend %texto-centrado;
         }
         }
+
         /*GALERIA ADOPCIONES*/
         #adopciones{
             background-color: $color-terciario;
@@ -110,12 +139,11 @@ body{
         }
         }      
         }
-        }
-        
+        } 
     }
 }
 
-
+/*RESPONSIVE TABLET*/
 @media screen and (min-width: 768px){
     body{
         main{
@@ -124,6 +152,7 @@ body{
                 font-size: 250%;
                 margin-top: 7rem;
                 padding: 2rem 5rem;
+                background-image: url(../img/banner.png);
             }
             
             #adopciones{
@@ -149,7 +178,6 @@ body{
 
 /*RESPONSIVE DESKTOP*/
 @media screen and (min-width: 1024px){
-    
     body{
         h1{
             font-size: 2.7em;
@@ -201,6 +229,7 @@ body{
                 background-size: cover;
                 background-repeat: no-repeat;
                 margin-top: 7rem;
+                background-image: url(../img/banner.png);
             }
 
             /*estilos texto under hover*/

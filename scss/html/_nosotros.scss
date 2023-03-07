@@ -12,6 +12,9 @@ body{
         text-decoration: none;
         font-weight: bolder;
     }
+    .bg-light {
+        background-color: white !important;
+    }
     .navbar {
         display: flex;
         flex-direction: column;
@@ -52,12 +55,41 @@ body{
             padding: 0rem 2rem;
             margin-top: 7rem;
             width: 100%;
-            height: 35vh;
+            height: 80vh;
             color: white;
-            background-image: url(../img/banner2.png);
+            background-image: url(../img/banner2-mobile.png);
             background-size: cover;
             background-repeat: no-repeat;
             grid-area: hero-uno;
+
+            .text-focus-in {
+                @extend %animacion;
+            }
+            /* animation text-focus-in*/
+            @-webkit-keyframes text-focus-in {
+                0% {
+                -webkit-filter: blur(12px);
+                        filter: blur(12px);
+                opacity: 0;
+                }
+                100% {
+                -webkit-filter: blur(0px);
+                        filter: blur(0px);
+                opacity: 1;
+                }
+            }
+            @keyframes text-focus-in {
+                0% {
+                -webkit-filter: blur(12px);
+                        filter: blur(12px);
+                opacity: 0;
+                }
+                100% {
+                -webkit-filter: blur(0px);
+                        filter: blur(0px);
+                opacity: 1;
+                }
+            }
         }
         .light{
             width: 100%;
@@ -85,8 +117,13 @@ body{
                 position: relative;
                 display: flex;
                 flex-direction: column;
+                p{
+                    margin-bottom: 0.6rem;
+                }
             .postcard__title {
-                font-size: 1.75rem;}
+                font-size: 1.75rem;
+                padding-bottom: 0.5rem;
+            }
             .postcard__preview-txt {
                 color: black;
                 overflow: hidden;
@@ -103,8 +140,8 @@ body{
 
 /*media querys*/
 /*RESPONSIVE TABLET*/
-@media screen and (min-width: 769px) {
-/*estilos de card mision y vision*/ 
+@media screen and (min-width: 768px) {
+    /*estilos de card mision y vision*/ 
 body{
     main{
         .hero-uno {
@@ -112,6 +149,7 @@ body{
             font-size: 250%;
             margin-top: 7rem;
             padding: 2rem 5rem;
+            background-image: url(../img/banner2.png);
         }
         .light{
         .postcard {
@@ -126,6 +164,9 @@ body{
             .postcard__text {
                 padding: 3rem;
                 width: 100%;
+                p{
+                    margin-bottom: 0.3rem;
+                }
             .postcard__title {
                 font-size: 1.75rem;}
             }
@@ -147,7 +188,7 @@ body{
             padding-top: 3rem;
             padding-bottom: 2rem;
         }
-
+        
         h2{
             font-size: 2em;
         }
@@ -178,6 +219,7 @@ body{
                 padding: 0rem 5rem;
                 width: 100%;
                 height: 800px;
+                background-image: url(../img/banner2.png);
             }
 
             /*estilos texto under hover*/

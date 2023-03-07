@@ -14,6 +14,9 @@ body{
         text-decoration: none;
         font-weight: bolder;
     }
+    .bg-light {
+        background-color: white !important;
+    }
     .navbar {
         display: flex;
         flex-direction: column;
@@ -53,11 +56,40 @@ body{
         padding: 0rem 2rem;
         margin-top: 7rem;
         width: 100%;
-        height: 35vh;
+        height: 80vh;
         color: white;
-        background-image: url(../img/banner5.png);
+        background-image: url(../img/banner5-mobile.png);
         background-size: cover;
         background-repeat: no-repeat;
+
+        .text-focus-in {
+            @extend %animacion;
+        }
+        /* animation text-focus-in*/
+        @-webkit-keyframes text-focus-in {
+            0% {
+            -webkit-filter: blur(12px);
+                    filter: blur(12px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-filter: blur(0px);
+                    filter: blur(0px);
+            opacity: 1;
+            }
+        }
+        @keyframes text-focus-in {
+            0% {
+            -webkit-filter: blur(12px);
+                    filter: blur(12px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-filter: blur(0px);
+                    filter: blur(0px);
+            opacity: 1;
+            }
+        }
     }
 
     #testimonios-adopt {
@@ -157,7 +189,17 @@ body{
         font-size: 250%;
         margin-top: 7rem;
         padding: 2rem 5rem;
+        background-image: url(../img/banner5.png);
     }
+
+    #testimonios-adopt {
+        display: grid;
+        place-items: center;
+        height: 30rem;
+        padding-bottom: 35rem;
+        background: #ddbccf;
+    }
+
     footer{
         .container-footer{
             .sec{
@@ -225,6 +267,7 @@ body{
                 color: white;
                 background-size: cover;
                 background-repeat: no-repeat;
+                background-image: url(../img/banner5.png);
             }
 
             /*estilos texto under hover*/
