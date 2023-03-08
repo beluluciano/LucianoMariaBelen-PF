@@ -1433,7 +1433,7 @@ footer {
   color: #d27aac;
   font-weight: bold; }
   .copyright-text p {
-    font-size: 0.6rem !important; }
+    font-size: 0.6rem; }
 
 /*RESPONSIVE TABLET*/
 @media screen and (min-width: 768px) {
@@ -1452,10 +1452,9 @@ footer {
       footer .container-footer .sec .info li span {
         font-size: 0.75rem; }
     footer .container-footer .about-us {
-      padding-left: 3rem; } }
-
-.copyright-text p {
-  font-size: 1rem; }
+      padding-left: 3rem; }
+  .copyright-text p {
+    font-size: 1rem; } }
 
 /*RESPONSIVE DESKTOP*/
 @media screen and (min-width: 1024px) {
@@ -1472,10 +1471,9 @@ footer {
       footer .container-footer .sec .info li span {
         font-size: 1rem; }
   footer .about-us {
-    padding-left: 3rem; } }
-
-.copyright-text p {
-  font-size: 1rem; }
+    padding-left: 3rem; }
+  .copyright-text p {
+    font-size: 0.8rem; } }
 
 /*ESTILOS DE CARDS DE TEMAS IMPORTANTES*/
 #temas-importantes {
