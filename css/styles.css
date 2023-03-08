@@ -7,7 +7,7 @@
   scroll-behavior: smooth; }
 
 body main .info-main .texto-centrado {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   justify-content: center;
   text-align: justify;
   margin: auto;
@@ -68,7 +68,7 @@ body main .hero-uno {
   text-align: start;
   flex-direction: column;
   line-height: 130%;
-  font-size: 130%;
+  font-size: 140%;
   font-weight: bold;
   padding: 0rem 2rem;
   margin-top: 7rem;
@@ -123,7 +123,7 @@ body main .light {
         object-fit: cover;
         position: relative; }
     body main .light .postcard .postcard__text {
-      font-size: 0.7rem;
+      font-size: 0.9rem;
       padding: 2rem;
       position: relative;
       display: flex;
@@ -131,7 +131,7 @@ body main .light {
       body main .light .postcard .postcard__text p {
         margin-bottom: 0.6rem; }
       body main .light .postcard .postcard__text .postcard__title {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         padding-bottom: 0.5rem; }
       body main .light .postcard .postcard__text .postcard__preview-txt {
         color: black;
@@ -218,11 +218,12 @@ body main .light {
           position: relative;
           color: #ffffff; }
           body main .light .postcard .postcard__text {
-            font-size: 0.8rem;
-            padding: 3rem;
+            padding: 5rem 8rem;
             position: relative;
             display: flex;
             flex-direction: column; }
+            body main .light .postcard .postcard__text p {
+              font-size: 1rem; }
             body main .light .postcard .postcard__text .postcard__title {
               font-size: 1.75rem; }
             body main .light .postcard .postcard__text .postcard__preview-txt {
@@ -233,7 +234,7 @@ body main .light {
               font-size: 1rem; } }
 
 body main .info-main .texto-centrado {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   justify-content: center;
   text-align: justify;
   margin: auto;
@@ -297,7 +298,7 @@ body #hero-cinco {
   text-align: start;
   flex-direction: column;
   line-height: 130%;
-  font-size: 130%;
+  font-size: 140%;
   font-weight: bold;
   padding: 0rem 2rem;
   margin-top: 7rem;
@@ -359,6 +360,10 @@ body #testimonios-adopt {
     body #testimonios-adopt .container-testimonial .testimonials {
       max-width: 1000px;
       margin: 0 auto 80px auto; }
+      body #testimonios-adopt .container-testimonial .testimonials #carouselExample .carousel-control-next {
+        z-index: 0; }
+      body #testimonios-adopt .container-testimonial .testimonials #carouselExample .carousel-control-prev {
+        z-index: 0; }
       body #testimonios-adopt .container-testimonial .testimonials #carouselExample .carousel-inner .carousel-item .single-item {
         background: #fff;
         color: #111;
@@ -421,9 +426,12 @@ body #testimonios-adopt {
       padding-top: 3rem;
       padding-bottom: 2rem; }
     body h2 {
-      font-size: 2em; }
+      font-size: 2em;
+      margin: 0;
+      padding: 0; }
     body h3 {
-      font-size: 2em; }
+      font-size: 2em;
+      margin: 0; }
     body .header-donar .navbar {
       display: flex;
       flex-direction: row;
@@ -467,7 +475,7 @@ body #testimonios-adopt {
         background: #ddbccf; } }
 
 body main .info-main .texto-centrado {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   justify-content: center;
   text-align: justify;
   margin: auto;
@@ -530,7 +538,7 @@ body main {
     text-align: start;
     flex-direction: column;
     line-height: 130%;
-    font-size: 130%;
+    font-size: 140%;
     font-weight: bold;
     padding: 0rem 2rem;
     margin-top: 7rem;
@@ -566,13 +574,14 @@ body main {
     display: flex;
     margin-top: 0em; }
   body main .section-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-left: 10%;
     padding-right: 10%;
     overflow: hidden; }
+    body main .section-form .container-form .inf-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
     body main .section-form .container-form {
       width: 100%;
       max-width: 1000px;
@@ -642,7 +651,9 @@ body main {
       padding-top: 3rem;
       padding-bottom: 2rem; }
     body h2 {
-      font-size: 2em; }
+      font-size: 2em;
+      padding: 0;
+      margin: 0; }
     body h3 {
       font-size: 2em; }
     body .header-contacto .navbar {
@@ -679,15 +690,24 @@ body main {
           align-items: center;
           justify-items: center;
           width: 80%; }
-      body main .section-form .container-form {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 80px;
-        margin-top: 80px;
-        margin-bottom: 80px; } }
+      body main .texto-negrita {
+        margin: 0;
+        padding: 0; }
+      body main .section-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        body main .section-form .container-form {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 80px;
+          margin-top: 80px;
+          margin-bottom: 80px; }
+          body main .section-form .container-form .inf-form {
+            padding-bottom: 5rem; } }
 
 body main .info-main .texto-centrado {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   justify-content: center;
   text-align: justify;
   margin: auto;
@@ -748,7 +768,7 @@ body .hero-tres {
   text-align: start;
   flex-direction: column;
   line-height: 130%;
-  font-size: 130%;
+  font-size: 140%;
   font-weight: bold;
   padding: 0rem 2rem;
   margin-top: 7rem;
@@ -801,7 +821,7 @@ body #lista-uno .container {
     body #lista-uno .container .texto-requisitos1 p {
       padding: 0px;
       margin: 0px;
-      font-size: 0.7rem; }
+      font-size: 0.9rem; }
     body #lista-uno .container .texto-requisitos1 .title-requisitos {
       font-size: 1.1rem;
       font-weight: bold;
@@ -826,7 +846,7 @@ body #lista-dos .container {
     padding: 1.5rem 2rem; }
     body #lista-dos .container .texto-requisitos2 p {
       margin: 0px;
-      font-size: 0.7rem; }
+      font-size: 0.9rem; }
 
 body #lista-tres .container {
   align-items: center; }
@@ -847,13 +867,13 @@ body #lista-tres .container {
     padding: 1.5rem 2rem; }
     body #lista-tres .container .texto-requisitos3 p {
       margin: 0px;
-      font-size: 0.7rem; }
+      font-size: 0.9rem; }
     body #lista-tres .container .texto-requisitos3 ul {
       margin: 0%;
       padding-left: 0.4rem; }
       body #lista-tres .container .texto-requisitos3 ul li {
         padding: 0.5rem 0rem;
-        font-size: 0.7rem; }
+        font-size: 0.9rem; }
 
 /*media querys*/
 @media screen and (min-width: 768px) {
@@ -1021,7 +1041,7 @@ body #lista-tres .container {
             font-size: 1.1rem; } }
 
 body main .info-main .texto-centrado {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   justify-content: center;
   text-align: justify;
   margin: auto;
@@ -1085,7 +1105,7 @@ body {
       text-align: start;
       flex-direction: column;
       line-height: 130%;
-      font-size: 130%;
+      font-size: 140%;
       font-weight: bold;
       padding: 0rem 2rem;
       margin-top: 7rem;
@@ -1131,6 +1151,8 @@ body {
         padding: 2rem 0rem 2rem 0rem; }
         body main #adopciones .las-adopciones h2 {
           font-weight: bold; }
+        body main #adopciones .las-adopciones h3 {
+          font-size: 1rem; }
       body main #adopciones .galeria {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1144,6 +1166,8 @@ body {
           align-items: center;
           background-color: #d27aac;
           border-radius: 5px; }
+          body main #adopciones .galeria .galeria-item p {
+            font-size: 0.8rem; }
           body main #adopciones .galeria .galeria-item img {
             width: 100%;
             padding-bottom: 0.6rem; }
@@ -1209,14 +1233,16 @@ body {
       body main .info-main {
         width: 100%; }
         body main .info-main .texto-centrado {
-          font-size: 150%;
+          font-size: 100%;
           align-items: center;
           justify-items: center;
-          width: 80%; } }
+          width: 80%; }
+      body main #adopciones .las-adopciones h3 {
+        font-size: 120%; } }
 
 /*variables, mixin, extend*/
 body main .info-main .texto-centrado {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   justify-content: center;
   text-align: justify;
   margin: auto;
@@ -1254,7 +1280,7 @@ body {
     font-size: 1em;
     font-weight: 500; }
   body h3 {
-    font-size: 0.8em; }
+    font-size: 1.2rem; }
   body h4 {
     font-size: 0.7em;
     color: #ffff; }
@@ -1296,7 +1322,7 @@ body {
   body main .info-main {
     width: 100%; }
     body main .info-main .texto-centrado {
-      font-size: 150%;
+      font-size: 130%;
       align-items: center;
       justify-items: center;
       width: 70%; } }
@@ -1404,7 +1430,7 @@ footer {
     footer .container-footer .about-us {
       padding-left: 3rem; }
   .copyright-text {
-    font-size: 1rem; } }
+    font-size: 0.75rem; } }
 
 /*RESPONSIVE DESKTOP*/
 @media screen and (min-width: 1024px) {
@@ -1418,10 +1444,13 @@ footer {
       padding-right: 2rem; }
     footer .container-footer .sec .info {
       font-size: 2rem; }
-    footer .container-footer .about-us {
-      padding-left: 3rem; }
-  .copyright-text {
-    font-size: 1rem; } }
+      footer .container-footer .sec .info li span {
+        font-size: 1rem; }
+  footer .about-us {
+    padding-left: 3rem; } }
+
+.copyright-text {
+  font-size: 1rem; }
 
 /*ESTILOS DE CARDS DE TEMAS IMPORTANTES*/
 #temas-importantes {

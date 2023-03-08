@@ -48,7 +48,7 @@ body{
         text-align: start;
         flex-direction: column;
         line-height: 130%;
-        font-size: 130%;
+        font-size: 140%;
         font-weight:bold;
         padding: 0rem 2rem;
         margin-top: 7rem;
@@ -106,7 +106,7 @@ body{
             p{
                 padding: 0px;
                 margin: 0px;
-                font-size: 0.7rem;
+                font-size: 0.9rem;
             }
         .title-requisitos{
             font-size: 1.1rem;
@@ -130,7 +130,7 @@ body{
             @include txt-requisitos;
             p{
                 margin: 0px;
-                font-size: 0.7rem;
+                font-size: 0.9rem;
             }
         }
         }
@@ -150,14 +150,14 @@ body{
             @include txt-requisitos;
             p{
                 margin: 0px;
-                font-size: 0.7rem;
+                font-size: 0.9rem;
             }
             ul{
                 margin: 0%;
                 padding-left: 0.4rem;
                 li{
                     padding: 0.5rem 0rem;
-                    font-size: 0.7rem;
+                    font-size: 0.9rem;
                 }
             }
         }

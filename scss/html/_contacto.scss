@@ -48,7 +48,7 @@ body{
             text-align: start;
             flex-direction: column;
             line-height: 130%;
-            font-size: 130%;
+            font-size: 140%;
             font-weight: bold;
             padding: 0rem 2rem;
             margin-top: 7rem;
@@ -94,13 +94,17 @@ body{
             display: flex;
             margin-top: 0em;}
         .section-form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             padding-left: 10%;
             padding-right: 10%;
             overflow: hidden;
+            .container-form{
+                .inf-form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
         .container-form {
             width: 100%;
             max-width: 1000px;
@@ -203,6 +207,8 @@ body{
         }
         h2{
             font-size: 2em;
+            padding: 0;
+            margin: 0;
         }
         
         h3{
@@ -252,13 +258,24 @@ body{
                     width: 80%;
                 }
             }
+
+            .texto-negrita{
+                margin: 0;
+                padding: 0;
+            }
             .section-form {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
             .container-form {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: 80px;
                 margin-top: 80px;
                 margin-bottom: 80px;
+                .inf-form {
+                    padding-bottom: 5rem;
+                }
             
             }
             }

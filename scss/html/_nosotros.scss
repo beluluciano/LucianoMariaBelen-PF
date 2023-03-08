@@ -50,7 +50,7 @@ body{
             text-align: start;
             flex-direction: column;
             line-height: 130%;
-            font-size: 130%;
+            font-size: 140%;
             font-weight: bold;
             padding: 0rem 2rem;
             margin-top: 7rem;
@@ -116,7 +116,7 @@ body{
             }
             }
             .postcard__text {
-                font-size: 0.7rem;
+                font-size: 0.9rem;
                 padding: 2rem;
                 position: relative;
                 display: flex;
@@ -125,7 +125,7 @@ body{
                     margin-bottom: 0.6rem;
                 }
             .postcard__title {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
                 padding-bottom: 0.5rem;
             }
             .postcard__preview-txt {
@@ -250,11 +250,13 @@ body{
                 position: relative;
                 color: #ffffff;
                 .postcard__text {
-                    font-size: 0.8rem;
-                    padding: 3rem;
+                    padding: 5rem 8rem;
                     position: relative;
                     display: flex;
                     flex-direction: column;
+                    p{
+                        font-size: 1rem;
+                    }
                 .postcard__title {
                     font-size: 1.75rem;}
                 .postcard__preview-txt {

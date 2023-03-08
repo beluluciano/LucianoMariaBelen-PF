@@ -51,7 +51,7 @@ body{
         text-align: start;
         flex-direction: column;
         line-height: 130%;
-        font-size: 130%;
+        font-size: 140%;
         font-weight:bold;
         padding: 0rem 2rem;
         margin-top: 7rem;
@@ -126,6 +126,13 @@ body{
             max-width: 1000px;
             margin: 0 auto 80px auto;
         #carouselExample{
+            .carousel-control-next{
+                z-index: 0;
+            }
+            
+            .carousel-control-prev {
+                z-index: 0;
+            }
             .carousel-inner{
                 .carousel-item{
                     .single-item{
@@ -246,10 +253,13 @@ body{
         }
         h2{
             font-size: 2em;
+            margin: 0;
+            padding: 0;
         }
         
         h3{
             font-size: 2em;
+            margin: 0;
         }
 
         /*ESTILOS NAVBAR*/

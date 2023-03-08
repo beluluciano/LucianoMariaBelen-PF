@@ -143,10 +143,11 @@ footer{
     }
     
     .copyright-text{
-        font-size: 1rem;
+        font-size: 0.75rem;
     
     }
     }
+
     
 /*RESPONSIVE DESKTOP*/
 @media screen and (min-width: 1024px){
@@ -164,6 +165,12 @@ footer{
             }
             .info{
                 font-size: 2rem;
+                li{
+                    span{
+                        font-size: 1rem;
+                    }
+                }
+            }
             }
 
         }
@@ -176,5 +183,4 @@ footer{
 .copyright-text{
     font-size: 1rem;
 
-}
 }
