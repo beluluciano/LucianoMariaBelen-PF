@@ -51,12 +51,12 @@ body{
         text-align: start;
         flex-direction: column;
         line-height: 130%;
-        font-size: 160%;
+        font-size: 130%;
         font-weight:bold;
         padding: 0rem 2rem;
         margin-top: 7rem;
         width: 100%;
-        height: 80vh;
+        height: 30vh;
         color: white;
         background-image: url(../img/banner5-mobile.png);
         background-size: cover;
@@ -95,8 +95,8 @@ body{
     #testimonios-adopt {
         display: grid;
         place-items: center;
-        height: 30rem;
-        padding-bottom: 55rem;
+        height: 15rem;
+        padding-bottom: 50rem;
         background: #ddbccf;
         .container-testimonial{
             height: 100vh;
@@ -156,8 +156,8 @@ body{
             }
             .col-md-6{
                 .content{
-                    font-size: 1rem;
-                    padding-top: 2rem;
+                    font-size: 0.8rem;;
+                    padding: 0rem 1rem;
                 p{
                     text-align: center;
                 span {
@@ -185,8 +185,8 @@ body{
 @media screen and(min-width: 768px){
 body{
     #hero-cinco{
-        height: 70vh;
-        font-size: 250%;
+        height: 40vh;
+        font-size: 220%;
         margin-top: 7rem;
         padding: 2rem 5rem;
         background-image: url(../img/banner5.png);
@@ -198,7 +198,22 @@ body{
         height: 30rem;
         padding-bottom: 35rem;
         background: #ddbccf;
+            .container-testimonial{
+            .testimonials{
+            #carouselExample{
+                .col-md-6{
+                    .content{
+                        font-size: 1rem;
+                        padding: 2rem;
+                    }
+                }
+            }
+            }
+            }
     }
+
+
+
 
     footer{
         .container-footer{
@@ -258,12 +273,12 @@ body{
                 align-items: center;
                 justify-content: center;
                 text-align: start;
-                font-size: 5rem;
+                font-size: 4.7rem;
                 line-height: 130%;
                 padding: 0rem 5rem;
                 margin-top: 7rem;
                 width: 100%;
-                height: 800px;
+                height: 62vh;
                 color: white;
                 background-size: cover;
                 background-repeat: no-repeat;

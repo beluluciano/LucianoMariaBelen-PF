@@ -48,12 +48,12 @@ body{
         text-align: start;
         flex-direction: column;
         line-height: 130%;
-        font-size: 160%;
+        font-size: 130%;
         font-weight:bold;
         padding: 0rem 2rem;
         margin-top: 7rem;
         width: 100%;
-        height: 80vh;
+        height: 30vh;
         color: white;
         background-image: url(../img/banner3-mobile.png);
         background-size: cover;
@@ -98,7 +98,7 @@ body{
             background-image: url(../img/requisitos1.png);
             background-size: cover;
             background-position: center center;
-            height: 55vh;
+            height: 35vh;
             width: 85%;
         }
         .texto-requisitos1 {
@@ -106,9 +106,10 @@ body{
             p{
                 padding: 0px;
                 margin: 0px;
+                font-size: 0.7rem;
             }
         .title-requisitos{
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             font-weight: bold;
             color: $color-principal;
         }
@@ -123,12 +124,13 @@ body{
             background-image: url(../img/requisitos2.png);
             background-size: cover;
             background-position: center center;
-            height: 55vh;
+            height: 35vh;
             width: 85%;}
         .texto-requisitos2{
             @include txt-requisitos;
             p{
                 margin: 0px;
+                font-size: 0.7rem;
             }
         }
         }
@@ -141,17 +143,22 @@ body{
             background-image: url(../img/requisitos3.png);
             background-size: cover;
             background-position: center center;
-            height: 55vh;
+            height: 35vh;
             width: 85%;
         }  
         .texto-requisitos3{
             @include txt-requisitos;
             p{
                 margin: 0px;
+                font-size: 0.7rem;
             }
             ul{
                 margin: 0%;
                 padding-left: 0.4rem;
+                li{
+                    padding: 0.5rem 0rem;
+                    font-size: 0.7rem;
+                }
             }
         }
         }
@@ -168,11 +175,14 @@ body{
 
     body{
         main{
+            h3{
+                font-weight: bold;
+            }
             .hero-tres{
-                font-size: 250%;
                 padding: 2rem 5rem;
                 margin-top: 7rem;
-                height: 70vh;
+                height: 40vh;
+                font-size: 220%;
                 background-image: url(../img/banner3.png);
             }
                 /*ESTILOS LISTA DE REQUISITOS*/
@@ -191,6 +201,9 @@ body{
                         font-size: 85%;
                         text-align: initial;
                         padding: 0rem 1.5rem;
+                        p{
+                            font-size: 0.8rem;
+                        }
                     }
                     }
                 }
@@ -210,6 +223,9 @@ body{
                         padding: 0rem 1.5rem;
                         display: flex;
                         flex-direction: column;
+                        p{
+                            font-size: 0.8rem;
+                        }
                     }
                     }
                 }
@@ -229,9 +245,19 @@ body{
                         padding: 0rem 1.5rem;
                         display: flex;
                         flex-direction: column;
+                        ul{
+                            li{
+                                padding: 0.5rem 0rem;
+                                font-size: 0.8rem;
+                            }
+                        }
+
                     }
                     }
-                }  
+                } 
+                .d-md-block{
+                    font-size: 0.9rem;
+                } 
         }
         footer{
             .container-footer{
@@ -289,11 +315,11 @@ body{
                 align-items: center;
                 justify-content: center;
                 text-align: start;
-                font-size: 5rem;
+                font-size: 4.7rem;
                 line-height: 130%;
                 padding: 0rem 5rem;
                 width: 100%;
-                height: 800px;
+                height: 62vh;
                 color: white;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -328,6 +354,12 @@ body{
                     text-align: initial;
                     padding: 0px 30px;
                     padding-left: 30px;
+                    .title-requisitos{
+                        font-size: 1.6rem;
+                    }
+                    p{
+                        font-size: 1.1rem;
+                    }
                 }
                 }
             }
@@ -348,6 +380,9 @@ body{
                     display: flex;
                     flex-direction: column;
                     padding-left: 30px;
+                    p{
+                        font-size: 1.1rem;
+                    }
                 }
                 }
             }
@@ -362,12 +397,17 @@ body{
                 }  
                 .texto-requisitos3{
                     width: 50%;
-                    font-size: 105%;
                     text-align: initial;
                     padding: 0px 30px;
                     display: flex;
                     flex-direction: column;
                     padding-left: 30px;
+                    ul{
+                        li{
+                            padding: 0.5rem 0rem;
+                            font-size: 1.1rem;
+                        }
+                    }
                 }
                 }
             } 

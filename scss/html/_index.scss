@@ -50,12 +50,12 @@ body{
             text-align: start;
             flex-direction: column;
             line-height: 130%;
-            font-size: 160%;
+            font-size: 130%;
             font-weight:bold;
             padding: 0rem 2rem;
             margin-top: 7rem;
             width: 100%;
-            height: 80vh;
+            height: 30vh;
             color: white;
             background-image: url(../img/banner-mobile.png);
             background-size: cover;
@@ -93,6 +93,7 @@ body{
         .info-main{
         .texto-centrado{
             @extend %texto-centrado;
+            width: 95%;
         }
         }
 
@@ -148,8 +149,8 @@ body{
     body{
         main{
             #hero{
-                height: 70vh;
-                font-size: 250%;
+                height: 40vh;
+                font-size: 220%;
                 margin-top: 7rem;
                 padding: 2rem 5rem;
                 background-image: url(../img/banner.png);
@@ -220,11 +221,11 @@ body{
                 align-items: center;
                 justify-content: center;
                 text-align: start;
-                font-size: 5rem;
+                font-size: 4.7rem;
                 line-height: 130%;
                 padding: 0rem 5rem;
                 width: 100%;
-                height: 800px;
+                height: 62vh;
                 color: white;
                 background-size: cover;
                 background-repeat: no-repeat;
