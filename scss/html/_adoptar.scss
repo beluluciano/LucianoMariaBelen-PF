@@ -98,7 +98,7 @@ body{
             background-image: url(../img/requisitos1.png);
             background-size: cover;
             background-position: center center;
-            height: 35vh;
+            height: 45vh;
             width: 85%;
         }
         .texto-requisitos1 {
@@ -124,7 +124,7 @@ body{
             background-image: url(../img/requisitos2.png);
             background-size: cover;
             background-position: center center;
-            height: 35vh;
+            height: 45vh;
             width: 85%;}
         .texto-requisitos2{
             @include txt-requisitos;
@@ -143,7 +143,7 @@ body{
             background-image: url(../img/requisitos3.png);
             background-size: cover;
             background-position: center center;
-            height: 35vh;
+            height: 45vh;
             width: 85%;
         }  
         .texto-requisitos3{
@@ -156,6 +156,7 @@ body{
                 margin: 0%;
                 padding-left: 0.4rem;
                 li{
+                    list-style: none;
                     padding: 0.5rem 0rem;
                     font-size: 0.9rem;
                 }
@@ -165,9 +166,27 @@ body{
 
         
     } 
-    
+    #carouselExampleCaptions{
+        .carousel-indicators {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin-right: 15%;
+            margin-bottom: 1rem;
+            margin-left: 15%;
+            list-style: none;
+        }
+
+    }
 
 }
+
+
 
 
 /*media querys*/

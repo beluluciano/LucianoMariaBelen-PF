@@ -103,6 +103,7 @@ body{
         .section-header{
             position: relative;
             text-align: center;
+            font-size: 1.3em;
             font-weight: bold;
             padding-top: 3rem;
             color: #9b577e;
@@ -119,7 +120,7 @@ body{
             display: block;
             font-weight: 500;
             font-size: 1rem;
-            padding: 0.2rem 0.6rem;
+            padding: 0.2rem 1rem;
         }
         }
         .testimonials{
@@ -221,7 +222,6 @@ body{
 
 
 
-
     footer{
         .container-footer{
             .sec{
@@ -307,12 +307,22 @@ body{
             }
 
             #testimonios-adopt {
-                display: grid;
-                place-items: center;
-                height: 40rem;
-                padding-bottom: 0;
-                background: #ddbccf;
+                height: 15rem;
+                padding-bottom: 40rem;
+                .container-testimonial{
+                    height: 100vh;
+                .section-header{
+                    font-size: 2em;
+                span {
+                    display: block;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    padding: 0.2rem 1rem;
+                    }
+                }
             }
+        }
+
         }
     }
 }

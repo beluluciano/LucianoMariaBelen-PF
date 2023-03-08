@@ -14,7 +14,7 @@ footer{
         width: 100%;
         display: grid;
         grid-template-columns: 1,1fr;
-        gap: 60px;
+        gap: 20px;
         justify-items: center;
         padding-left: 2rem;
         padding-bottom: 2rem;
@@ -100,10 +100,13 @@ footer{
     width: 100%;
     background-color: #ddbccf;
     padding: 0.3rem 1rem;
-    font-size: 0.7rem;
     text-align: center;
     color: $color-principal;
     font-weight: bold;
+    p{
+        font-size: 0.6rem !important ;
+
+    }
 }
 
 
@@ -142,11 +145,13 @@ footer{
         }
     }
     
-    .copyright-text{
-        font-size: 0.75rem;
-    
+}
+.copyright-text{
+    p{
+        font-size: 1rem;
     }
-    }
+
+}
 
     
 /*RESPONSIVE DESKTOP*/
@@ -181,6 +186,8 @@ footer{
 }
 
 .copyright-text{
-    font-size: 1rem;
+    p{
+        font-size: 1rem;
+    }
 
 }
